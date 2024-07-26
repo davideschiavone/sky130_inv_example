@@ -17,7 +17,8 @@ make timing
 then patch the Google SDK by applying the `sky130.patch` patch present in this repository
 
 ```
-git apply sky130.patch
+cd libraries/sky130_fd_pr/latest
+git apply /<pathtothisrepository>/sky130.patch
 ```
 
 Install `ngspice` following the link at:
@@ -28,3 +29,12 @@ http://web02.gonzaga.edu/faculty/talarico/vlsi/ngspice.html
 
 I used version 43.
 
+Modfiy the inverter by adding the correct path to the MOS models
+
+(in my example `.lib "../../gitdir/skywater-pdk/libraries/sky130_fd_pr/latest/models/sky130.lib.spice" tt*`)
+
+Then executes
+
+```
+ngspice tb_inverter_sky130.sp
+```
