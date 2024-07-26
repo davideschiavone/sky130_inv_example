@@ -1,7 +1,7 @@
 # sky130_inv_example
 simple example of an inverter.
 
-#download the skywater PDK 130 from Google at https://github.com/google/skywater-pdk (has commit 7198cf647113f56041e02abf3eb623692820c5e1)
+Download the skywater PDK 130 from Google at https://github.com/google/skywater-pdk (has commit 7198cf647113f56041e02abf3eb623692820c5e1)
 
 ```
 git clone https://github.com/google/skywater-pdk
